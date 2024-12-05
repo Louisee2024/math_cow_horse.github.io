@@ -20,7 +20,7 @@
 
 <script>
     async function updateVisitorCount() {
-        const response = await fetch('https://cbe9-151-189-126-144.ngrok-free.app:8000/visit');
+        const response = await fetch('https://cbe9-151-189-126-144.ngrok-free.app/visit');
         const data = await response.json();
         document.getElementById('visitor-count').innerText = data.visits;
     }
